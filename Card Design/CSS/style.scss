@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.card{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border: 1px solid rgb(146, 146, 146);
+    border-radius: 10px;
+
+    &__container{
+        padding: 10px;
+
+        &__content{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 20px;
+
+            &__heading{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+
+                h2{
+                    flex-basis: 70%;
+                    font-weight: 700;
+                    font-size: 18px;
+                }
+
+                .icons{
+                    width: 20%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    img{
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            ul{
+                margin: 20px 15px;
+
+                li{
+                    font-weight: 400;
+                    font-size: 9px;
+                }
+            }
+
+            &__link{
+                color: black;
+                font-size: 9px;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
