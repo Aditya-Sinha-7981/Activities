@@ -1,0 +1,53 @@
+*{
+    overflow: hidden;
+}
+
+h1{
+    text-align: center;
+}
+
+.container{
+    // position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+
+    input{
+        font-size: 22px;
+    }
+
+    a{
+        margin-top: 30px;
+        font-family: 'Bookman Old style';
+        font-size: 22px;
+        text-decoration: none;
+        background: #127402;
+        color: white;
+        padding: 10px 25px;
+        border-radius: 20px;
+    }
+
+    p{
+        font-family: 'Courier New', Courier, monospace;
+        background: rgb(133, 133, 133);
+        color: white;
+        padding: 10px;
+    }
+
+    .copied{
+        position: absolute;
+        bottom: 0;
+        transform: translateY(-50%);
+        transition: all 0.3s;
+        margin: 0;
+    }
+
+    .copied.hidden{
+        // display: none;
+        transform: translateY(1000%);
+        transition: all 0.3s;
+    }
+}

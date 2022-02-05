@@ -1,0 +1,66 @@
+* {
+  overflow: hidden;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.container input {
+  font-size: 22px;
+}
+
+.container a {
+  margin-top: 30px;
+  font-family: 'Bookman Old style';
+  font-size: 22px;
+  text-decoration: none;
+  background: #127402;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 20px;
+}
+
+.container p {
+  font-family: 'Courier New', Courier, monospace;
+  background: #858585;
+  color: white;
+  padding: 10px;
+}
+
+.container .copied {
+  position: absolute;
+  bottom: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  margin: 0;
+}
+
+.container .copied.hidden {
+  -webkit-transform: translateY(1000%);
+          transform: translateY(1000%);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+/*# sourceMappingURL=style.css.map */
